@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+from threading import Thread
+import time
+from sys import argv
+import socket
+def banner():
+    print(
+        """
+        [[[[[]]]]][[{{[]]}}{}{{{{{}}}}
+        [[[[[]]]]]WHOZTHERE{{{{{{}}}}}
+
+     BY X - https://github.com/dev0ps221
+        
+        [[[[[]]]]]WHOZTHERE{{{{{{}}}}}
+        [[[[[]]]]][[{{[]]}}{}{{{{{}}}}
+        """
+    )
+def animate(text="",n=1,l=4):
+    while n < l:
+        print(text+"."*n,end="\r")
+        n+=1
+        time.sleep(0.5)
+banner()
+animate("Starting")
+print('')
+tails = range(1,255)
+there = []
+for tail in tails:
+    try:
+        ip = f'{"192.168.1" if len(argv[1:]) < 1 else ".".join(argv[1].split(".")[:3])}.{tail}'
+        print('testing ip :'+ip,end='\r')
+        found = socket.gethostbyaddr(ip)
+        if(found[0] != ip):
+            print(f"found {found[0]} at {found[2][0]}")
+            there.append(found)
+    except Exception as e:
+        pass
+# print(there)
+    
