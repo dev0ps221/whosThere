@@ -6,22 +6,23 @@
 
 # how to get it ?
 ```
->
->git clone https://github.com/dev0ps221/whosThere
+git clone https://github.com/dev0ps221/whosThere
 ```
 ## Usage
+### get the execute rights ;) 
+
 ```
-### get the execute rights ;) chmod +x whosThere
->
-> #run
->> 
->> ./whosThere
+chmod +x whosThere
+```
+### run
+```
+ ./whosThere
 
-> #or
+ or
 
->> ./whosThere targethost
+ ./whosThere targethost
 
-> #or
+ or
 
->> ./whosThere targetnetwork 
+./whosThere targetnetwork 
 ```
