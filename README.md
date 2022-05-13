@@ -1,25 +1,27 @@
 # whosThere
-#list a networks connected hosts
-#A simple Network Recon Tool - by x
+# lists a network's connected hosts
+# A simple Network Recon Tool - by x
 
-#THIS PROGRAM IS FOR EDUCATIONAL PURPOSE ONLY!! #THE DEVELOPPER ISN"T RESPONSIBLE OF ANY USAGE OF IT THAT MAY HARM OR HAVE ANY KIND of ILLEGAL ACTIVITY RELATION
+# THIS PROGRAM IS FOR EDUCATIONAL PURPOSE ONLY!! #THE DEVELOPPER ISN"T RESPONSIBLE OF ANY USAGE OF IT THAT MAY HARM OR HAVE ANY KIND of ILLEGAL ACTIVITY RELATION
 
-#how to get it ?
+# how to get it ?
+```
+>
+>git clone https://github.com/dev0ps221/whosThere
+```
+## Usage
+```
+### get the execute rights ;) chmod +x whosThere
+>
+> #run
+>> 
+>> ./whosThere
 
-git clone https://github.com/dev0ps221/whosThere
+> #or
 
-##Usage
+>> ./whosThere targethost
 
-#get the execute rights ;) chmod +x whosThere
+> #or
 
-#run
-
-./whosThere
-
-#or
-
-./whosThere targethost
-
-#or
-
-./whosThere targetnetwork 
+>> ./whosThere targetnetwork 
+```
